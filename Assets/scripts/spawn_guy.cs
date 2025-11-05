@@ -17,14 +17,15 @@ public class spawn_guy : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-          Scene currentscene = SceneManager.GetActiveScene();
-        sceneName = currentscene.name;
+      
        
     }
 
     // Update is called once per frame
     void Update()
     {
+            Scene currentscene = SceneManager.GetActiveScene();
+        sceneName = currentscene.name;
 if (sceneName == "Main_Game")
         {
             if (GuyChosen == 1)
@@ -41,6 +42,7 @@ if (sceneName == "Main_Game")
             {
                 Instantiate(knight);
                 Destroy(this.gameObject);
+                
             }
         }
     }
