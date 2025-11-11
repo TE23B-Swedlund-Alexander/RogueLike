@@ -154,5 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7727ebd465fc30442be4b77ffd867fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::nemenymomnt
-  speed: 2.5
-  player: {fileID: 365220951976552582, guid: cee9aad396acefd419501456ca5348df, type: 3}
+  speed: 0.01
