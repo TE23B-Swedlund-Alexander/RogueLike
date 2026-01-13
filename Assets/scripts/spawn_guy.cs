@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class spawn_guy : MonoBehaviour
 {
@@ -9,6 +10,12 @@ public class spawn_guy : MonoBehaviour
     GameObject archer;
     [SerializeField]
     GameObject knight;
+    [SerializeField]
+    Color wizardPulple;
+    [SerializeField]
+    Color knightRed;
+    [SerializeField]
+    Color rangerGreen;
 
     int GuyChosen = 0;
     string sceneName;
@@ -32,16 +39,22 @@ if (sceneName == "Main_Game")
             {
                 Instantiate(wizard);
                 Destroy(this.gameObject);
+                Camera.main.backgroundColor=wizardPulple;
+               
             }
             if (GuyChosen == 2)
             {
                 Instantiate(archer);
                 Destroy(this.gameObject);
+                  var farg =new Color (0f,209f,4f);
+               Camera.main.backgroundColor=rangerGreen;
             }
             if (GuyChosen == 3)
             {
                 Instantiate(knight);
                 Destroy(this.gameObject);
+                  
+               Camera.main.backgroundColor=knightRed;
                 
             }
         }

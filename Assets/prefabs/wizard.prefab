@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::player_movement
   speed: 4.5
+  animator: {fileID: -6742861554215466022}
 --- !u!50 &-4060799522180031533
 Rigidbody2D:
   serializedVersion: 5
