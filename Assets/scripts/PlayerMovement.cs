@@ -5,8 +5,9 @@ using UnityEditor.Experimental.GraphView;
 using UnityEditor.Tilemaps;
 using Unity.VisualScripting;
 using System;
+using UnityEngine.TextCore.Text;
 
-public class player_movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public float speed = 0.5f;
@@ -67,6 +68,7 @@ animator.SetBool("walking",true);
                 
             
              }
+            
         
     }
 

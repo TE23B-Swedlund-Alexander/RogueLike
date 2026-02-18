@@ -22,6 +22,8 @@ public class nemenymomnt : MonoBehaviour
 // newPosition ligger precis mellan transform.Position och target.transform.Position.
 
 transform.position = newPosition;
+
+
        
     }
    

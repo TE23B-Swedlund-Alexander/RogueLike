@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class enmaeansapwnr : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
     float spawnDelay;
     [SerializeField]
@@ -8,7 +8,7 @@ public class enmaeansapwnr : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        spawnDelay=10;
     }
 
     // Update is called once per frame

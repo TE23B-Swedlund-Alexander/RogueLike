@@ -24,38 +24,39 @@ public class spawn_guy : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-      
-       
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-            Scene currentscene = SceneManager.GetActiveScene();
+        Scene currentscene = SceneManager.GetActiveScene();
         sceneName = currentscene.name;
-if (sceneName == "Main_Game")
+        if (sceneName == "Main_Game")
         {
             if (GuyChosen == 1)
             {
                 Instantiate(wizard);
                 Destroy(this.gameObject);
-                Camera.main.backgroundColor=wizardPulple;
-               
+                
+                Camera.main.backgroundColor = wizardPulple;
+
             }
             if (GuyChosen == 2)
             {
                 Instantiate(archer);
                 Destroy(this.gameObject);
-                  var farg =new Color (0f,209f,4f);
-               Camera.main.backgroundColor=rangerGreen;
+
+                Camera.main.backgroundColor = rangerGreen;
             }
             if (GuyChosen == 3)
             {
                 Instantiate(knight);
                 Destroy(this.gameObject);
-                  
-               Camera.main.backgroundColor=knightRed;
-                
+
+                Camera.main.backgroundColor = knightRed;
+
             }
         }
     }

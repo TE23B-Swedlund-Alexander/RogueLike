@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 8bfc0c1473939cd40bacd9722b915780
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wizard: {fileID: 3565578644339250259, guid: 9d90afcd9ce762a4fbd6135779549560, type: 3}
+  - archer: {fileID: 456989984545733805, guid: 99c59c7c59d544c49b4de0a7751ae726, type: 3}
+  - knight: {fileID: 6916433229117306657, guid: 82562be01c78aab4daa258802fb36e01, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
