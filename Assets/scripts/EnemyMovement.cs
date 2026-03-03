@@ -18,7 +18,7 @@ public class nemenymomnt : MonoBehaviour
     // Update is called once per frameTransform>
     void Update()
     {
-        Vector3 newPosition = Vector3.MoveTowards(transform.position, Player.transform.position, speed);
+        Vector3 newPosition = Vector3.MoveTowards(transform.position, Player.transform.position, speed/100);
 // newPosition ligger precis mellan transform.Position och target.transform.Position.
 
 transform.position = newPosition;

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5357710272407823991}
   - component: {fileID: -3379948857552971277}
   - component: {fileID: -4611406119545695118}
+  - component: {fileID: 2154243292244804541}
   m_Layer: 0
   m_Name: archer
   m_TagString: Player
@@ -223,3 +224,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.0001, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2154243292244804541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456989984545733805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ea3ea43a83ec242bed608bd30f1e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GetHurt
+  Hp: 5
+  TimeBetweenHurt: 1
