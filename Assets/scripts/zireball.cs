@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class zireball : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // en projectil som skapar en explotion näe den koliderar med en fiende
     void Start()
     {
         

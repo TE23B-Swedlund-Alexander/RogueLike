@@ -3,13 +3,14 @@ using UnityEngine.InputSystem.Interactions;
 
 public class DealDmg : MonoBehaviour
 {
-     [SerializeField]
-      int dmg;
-
-
+[SerializeField]
+     public int dmg;
     
     
-
+public int GetDmg()
+    {
+        return dmg;
+    }
    
     
 }

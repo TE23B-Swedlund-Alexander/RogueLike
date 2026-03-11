@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class slash : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    int dmg;
+    //projectil som ska åka en viss distans innan den despawnar och skadar alla fiender den åker igenom
 
     // Update is called once per frame
     void Update()
