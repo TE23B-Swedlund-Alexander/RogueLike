@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ea3ea43a83ec242bed608bd30f1e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GetHurt
-  Hp: 5
+  maxHp: 4
   TimeBetweenHurt: 1
   guythatcanhurtme: Enemy
   IsPlayer: 1

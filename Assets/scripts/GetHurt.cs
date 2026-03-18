@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class GetHurt : MonoBehaviour
 {
-    [SerializeField]
-Slider HpSlider;
-
+ 
 
     [SerializeField]
     int maxHp = 3;
@@ -24,12 +22,18 @@ Slider HpSlider;
 [SerializeField]
 bool IsPlayer;
 
+        Slider HpSlider;
+
 int Hp;
     void Start()
     {
         Hp = maxHp;
+        if (IsPlayer == true)
+        {    
+        HpSlider = FindAnyObjectByType<Slider>();
     HpSlider.maxValue = maxHp;
     HpSlider.value = Hp;
+        }
     }
 
     void Update()
