@@ -3,13 +3,14 @@ using UnityEngine;
 public class camerares : MonoBehaviour
 {
    
-public float unitsToShowHorizontally = 12;
+public float unitsToShowHorizontally = 22;
+public float unitsToShowVertically=10;
 
 private void Update()
 {
     float screenWidth = unitsToShowHorizontally;
 
-    float screenHeight = 10;
+    float screenHeight = unitsToShowVertically;
 
     float orthographicSize = screenHeight / 2f;
 

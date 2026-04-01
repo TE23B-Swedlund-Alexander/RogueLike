@@ -3379,6 +3379,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3777968230154330113, guid: 82562be01c78aab4daa258802fb36e01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6268309858850916165, guid: 82562be01c78aab4daa258802fb36e01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3602,7 +3606,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.12941177, g: 0.13725491, b: 0.13725491, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3714,7 +3718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1d4db97cf9ea240940866f3c7e9eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camerares
-  unitsToShowHorizontally: 22
+  unitsToShowHorizontally: 24
+  unitsToShowVertically: 11
 --- !u!1 &1207394829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,6 +4056,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6076798624010970902, guid: 99c59c7c59d544c49b4de0a7751ae726, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4176,6 +4185,10 @@ PrefabInstance:
     - target: {fileID: 3151749436899679946, guid: 9d90afcd9ce762a4fbd6135779549560, type: 3}
       propertyPath: whatGuy
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294112862140586095, guid: 9d90afcd9ce762a4fbd6135779549560, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3565578644339250259, guid: 9d90afcd9ce762a4fbd6135779549560, type: 3}
       propertyPath: m_Name

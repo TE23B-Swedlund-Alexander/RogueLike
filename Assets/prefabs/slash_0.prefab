@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713943214056669521}
   - component: {fileID: 6606920803935927218}
+  - component: {fileID: -6718903232367691226}
   m_Layer: 0
   m_Name: slash_0
   m_TagString: Untagged
@@ -90,3 +91,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6718903232367691226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197305229976066291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d567bc3ebd1fdc4caae5b176c85c782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::projectilemovement
+  speed: 0.5
