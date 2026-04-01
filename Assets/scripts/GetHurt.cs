@@ -59,12 +59,16 @@ int Hp;
             
         Hp-=dmg;
         TimeSinceHurt=0;
+            if (IsPlayer)
+            {
+                
         HpSlider.value=Hp;
+            }
         }
     }
       
 
-void OnTriggerEnter2D(Collider2D collision)
+ private void OnTriggerStay2D(Collider2D collision)
     {
       if (collision.gameObject.tag == guythatcanhurtme)
         {

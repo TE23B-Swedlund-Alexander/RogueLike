@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -2728488392149636217}
   - component: {fileID: -2573667676856963864}
   - component: {fileID: 4761822103343846260}
+  - component: {fileID: -7741656775960170891}
+  - component: {fileID: 5917747288016966306}
   m_Layer: 0
   m_Name: arrow_0
   m_TagString: Projectile
@@ -179,3 +181,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-7741656775960170891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101895639870996574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ea3ea43a83ec242bed608bd30f1e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GetHurt
+  maxHp: 1
+  TimeBetweenHurt: 0
+  guythatcanhurtme: Enemy
+  IsPlayer: 0
+--- !u!114 &5917747288016966306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101895639870996574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a29357889b2390458a0b4868271014b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  shelfLife: 10
+  Explotion: {fileID: 3675780470879593036, guid: 5022d2c24950fdf4fa8e9fb0a66bebe2, type: 3}
+  isFireball: 0
