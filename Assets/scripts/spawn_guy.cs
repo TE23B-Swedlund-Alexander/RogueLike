@@ -19,6 +19,7 @@ public class spawn_guy : MonoBehaviour
 
     int GuyChosen = 0;
     string sceneName;
+    public int enemyHp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,7 +40,7 @@ public class spawn_guy : MonoBehaviour
             {
                 Instantiate(wizard);
                 Destroy(this.gameObject);
-                
+             
                 Camera.main.backgroundColor = wizardPulple;
 
             }
@@ -47,14 +48,14 @@ public class spawn_guy : MonoBehaviour
             {
                 Instantiate(archer);
                 Destroy(this.gameObject);
-
+             
                 Camera.main.backgroundColor = rangerGreen;
             }
             if (GuyChosen == 3)
             {
                 Instantiate(knight);
                 Destroy(this.gameObject);
-
+               
                 Camera.main.backgroundColor = knightRed;
 
             }

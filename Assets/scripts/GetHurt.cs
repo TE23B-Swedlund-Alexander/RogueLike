@@ -5,45 +5,66 @@ using UnityEngine.UI;
 
 public class GetHurt : MonoBehaviour
 {
- 
 
-    [SerializeField]
-    int maxHp = 3;
+
+
+    public int maxHp = 3;
 
     [SerializeField]
     float TimeBetweenHurt;
 
     float TimeSinceHurt;
 
-    
-      [SerializeField]
-      string guythatcanhurtme;
 
-[SerializeField]
-bool IsPlayer;
+    [SerializeField]
+    string guythatcanhurtme;
 
-        Slider HpSlider;
+    [SerializeField]
+    bool IsPlayer;
 
-int Hp;
+    Slider HpSlider;
+
+    public bool isEnemy;
+
+    int Hp=1;
     void Start()
     {
+        // if (isEnemy == true)
+        // {
+        // //  GameObject guy = GameObject.FindGameObjectWithTag("Player");
+        // //  guy.GetComponentInChildren<>
+        // //  if(guy. == "wizard")
+        // //     {
+        // //         Hp=1;
+        // //     }
+        // //  if(guy.name == "knight")
+        // //     {
+        // //         Hp=4;
+        // //     }
+        // //  if(guy.name == "archer")
+        // //     {
+        // //         Hp=3;
+        // //     }
+        // }
+
+
         Hp = maxHp;
         if (IsPlayer == true)
-        {    
-        HpSlider = FindAnyObjectByType<Slider>();
-    HpSlider.maxValue = maxHp;
-    HpSlider.value = Hp;
+        {
+            HpSlider = FindAnyObjectByType<Slider>();
+            HpSlider.maxValue = maxHp;
+            HpSlider.value = Hp;
         }
     }
 
     void Update()
     {
-        TimeSinceHurt+=Time.deltaTime;
-        
+        TimeSinceHurt += Time.deltaTime;
+
 
         if (Hp <= 0)
         {
-            Destroy (this.gameObject);
+            Destroy(this.gameObject);
             if (IsPlayer == true)
             {
                 SceneManager.LoadScene("Game_Over");
@@ -56,28 +77,26 @@ int Hp;
     {
         if (TimeSinceHurt > TimeBetweenHurt)
         {
-            
-        Hp-=dmg;
-        TimeSinceHurt=0;
+
+            Hp -= dmg;
+            TimeSinceHurt = 0;
             if (IsPlayer)
             {
-                
-        HpSlider.value=Hp;
+
+                HpSlider.value = Hp;
             }
         }
     }
-      
 
- private void OnTriggerStay2D(Collider2D collision)
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
-      if (collision.gameObject.tag == guythatcanhurtme)
+        if (collision.gameObject.tag == guythatcanhurtme)
         {
-            
-            
-            
-            int dmg = 1;
-            TakeDamage(dmg);
-          
+
+
+            TakeDamage(1);
+
         }
 
     }

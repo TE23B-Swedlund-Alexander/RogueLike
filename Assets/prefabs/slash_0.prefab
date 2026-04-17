@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 7378134568292765658}
   - component: {fileID: -903568221025731583}
   - component: {fileID: -499124864931972534}
-  - component: {fileID: 2820159502693941170}
   - component: {fileID: 1852013061225076528}
   m_Layer: 0
   m_Name: slash_0
@@ -213,22 +212,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2820159502693941170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7197305229976066291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73ea3ea43a83ec242bed608bd30f1e5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GetHurt
-  maxHp: 3
-  TimeBetweenHurt: 0
-  guythatcanhurtme: Enemy
-  IsPlayer: 0
 --- !u!114 &1852013061225076528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,3 +227,6 @@ MonoBehaviour:
   shelfLife: 0.5
   Explotion: {fileID: 3675780470879593036, guid: 5022d2c24950fdf4fa8e9fb0a66bebe2, type: 3}
   isFireball: 0
+  guythatcanhurtme: Enemy
+  TimeBetweenHurt: 0.1
+  maxHp: 99

@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7666147285027894450}
   - component: {fileID: -9103706271083488821}
   - component: {fileID: -8941341130893043202}
-  - component: {fileID: 5602951051705257572}
   m_Layer: 0
   m_Name: enemy,png
   m_TagString: Enemy
@@ -264,19 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GetHurt
   maxHp: 3
-  TimeBetweenHurt: 0.1
+  TimeBetweenHurt: 0.3
   guythatcanhurtme: Projectile
   IsPlayer: 0
---- !u!114 &5602951051705257572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876755070962502971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4289c66ed39b04ab9965e575724376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DealDmg
-  dmg: 1
+  isEnemy: 1

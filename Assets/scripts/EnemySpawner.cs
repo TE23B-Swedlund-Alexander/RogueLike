@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    float spawnDelay;
+
+   public float spawnDelay;
     [SerializeField]
-    GameObject nemerentre;
+    GameObject enemy;
+    Transform spawn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawnDelay=10;
+        
+        spawn = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -16,8 +19,10 @@ public class EnemySpawner : MonoBehaviour
     {
         if (spawnDelay <= 0)
         {
+    
 
-            Instantiate(nemerentre);
+           Instantiate(enemy, spawn.position, Quaternion.identity);
+           
             spawnDelay = 5;
         }
         spawnDelay -= Time.deltaTime;
