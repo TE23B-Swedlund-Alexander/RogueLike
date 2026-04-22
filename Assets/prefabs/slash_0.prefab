@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: -903568221025731583}
   - component: {fileID: -499124864931972534}
   - component: {fileID: 1852013061225076528}
+  - component: {fileID: -5227895273124881658}
   m_Layer: 0
   m_Name: slash_0
   m_TagString: Projectile
@@ -230,3 +231,16 @@ MonoBehaviour:
   guythatcanhurtme: Enemy
   TimeBetweenHurt: 0.1
   maxHp: 99
+--- !u!114 &-5227895273124881658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7197305229976066291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd632ae9a2feb284e97eb89ecc406062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  dmg: 4

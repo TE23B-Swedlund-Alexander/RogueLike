@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6185924716387708792}
   - component: {fileID: 5210736868182702371}
   - component: {fileID: 479508645462727453}
+  - component: {fileID: -2377035902913168670}
   m_Layer: 0
   m_Name: phireball_0
   m_TagString: Projectile
@@ -198,3 +199,16 @@ MonoBehaviour:
   guythatcanhurtme: Enemy
   TimeBetweenHurt: 0
   maxHp: 3
+--- !u!114 &-2377035902913168670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047677883278272882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd632ae9a2feb284e97eb89ecc406062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  dmg: 6

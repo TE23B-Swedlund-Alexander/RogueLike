@@ -9,8 +9,7 @@ using UnityEngine.TextCore.Text;
 
 public class PlayerMovement : MonoBehaviour
 {
-[SerializeField]
-GameObject Projectile;
+
 
 
     public float speed = 0.5f;
@@ -98,16 +97,7 @@ GameObject Projectile;
 
 
     }
-     private void OnMouseUp() {
-        
-    
-    
-        if  (sceneName != "Charachter selector")
-        {
-            Instantiate(Projectile);
-
-        }
-    }
+   
     private void FixedUpdate()
     {
         rb.linearVelocity = input * speed; //tror det är den här som säger åt gubben att röra på sig

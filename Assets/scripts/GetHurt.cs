@@ -24,9 +24,12 @@ public class GetHurt : MonoBehaviour
 
     Slider HpSlider;
 
-    public bool isEnemy;
+    Damage damga;
 
-    int Hp=1;
+    public bool isEnemy;
+    int dmgg;
+
+    int Hp = 1;
     void Start()
     {
         // if (isEnemy == true)
@@ -93,9 +96,13 @@ public class GetHurt : MonoBehaviour
     {
         if (collision.gameObject.tag == guythatcanhurtme)
         {
+            if (guythatcanhurtme == "Projectile")
+            {
+                damga = collision.gameObject.GetComponent<Damage>();
+                dmgg = damga.dmg;
+            }
 
-
-            TakeDamage(1);
+            TakeDamage(dmgg);
 
         }
 
