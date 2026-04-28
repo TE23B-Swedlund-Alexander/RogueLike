@@ -269,7 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796d77d0a8f8aec408c30ae8943dae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::player_movement
-  Projectile: {fileID: 3047677883278272882, guid: d7ecd721704bb6f46b1ef5d861845ecf, type: 3}
   speed: 4.5
   animator: {fileID: -6742861554215466022}
 --- !u!50 &-4060799522180031533
@@ -315,6 +314,8 @@ MonoBehaviour:
   TimeBetweenHurt: 1
   guythatcanhurtme: Enemy
   IsPlayer: 1
+  isEnemy: 0
+  Hp: 1
 --- !u!61 &8404244356546573353
 BoxCollider2D:
   m_ObjectHideFlags: 0

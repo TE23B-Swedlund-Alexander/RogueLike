@@ -138,7 +138,7 @@ MonoBehaviour:
   bullet: {fileID: 7197305229976066291, guid: 39445f04ba91e6741ab56ececfd44e4c, type: 3}
   bulletTransform: {fileID: 1576957658844655432}
   canFire: 1
-  timeBetweenFire: 0.6
+  timeBetweenFire: 0.5
 --- !u!1 &6916433229117306657
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796d77d0a8f8aec408c30ae8943dae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::player_movement
-  Projectile: {fileID: 7197305229976066291, guid: 39445f04ba91e6741ab56ececfd44e4c, type: 3}
   speed: 4.5
   animator: {fileID: 3788014583038902475}
 --- !u!50 &3644979231919607697
@@ -361,3 +360,5 @@ MonoBehaviour:
   TimeBetweenHurt: 1
   guythatcanhurtme: Enemy
   IsPlayer: 1
+  isEnemy: 0
+  Hp: 1

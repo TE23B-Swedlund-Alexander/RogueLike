@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,32 +25,17 @@ public class GetHurt : MonoBehaviour
 
     Slider HpSlider;
 
+    
+
     Damage damga;
 
     public bool isEnemy;
     int dmgg;
 
-    int Hp = 1;
+   public int Hp = 1;
     void Start()
     {
-        // if (isEnemy == true)
-        // {
-        // //  GameObject guy = GameObject.FindGameObjectWithTag("Player");
-        // //  guy.GetComponentInChildren<>
-        // //  if(guy. == "wizard")
-        // //     {
-        // //         Hp=1;
-        // //     }
-        // //  if(guy.name == "knight")
-        // //     {
-        // //         Hp=4;
-        // //     }
-        // //  if(guy.name == "archer")
-        // //     {
-        // //         Hp=3;
-        // //     }
-        // }
-
+    
 
         Hp = maxHp;
         if (IsPlayer == true)
@@ -68,6 +54,7 @@ public class GetHurt : MonoBehaviour
         if (Hp <= 0)
         {
             Destroy(this.gameObject);
+            
             if (IsPlayer == true)
             {
                 SceneManager.LoadScene("Game_Over");
@@ -96,11 +83,11 @@ public class GetHurt : MonoBehaviour
     {
         if (collision.gameObject.tag == guythatcanhurtme)
         {
-            if (guythatcanhurtme == "Projectile")
-            {
+            
                 damga = collision.gameObject.GetComponent<Damage>();
                 dmgg = damga.dmg;
-            }
+            
+          
 
             TakeDamage(dmgg);
 

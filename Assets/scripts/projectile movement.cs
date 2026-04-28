@@ -9,7 +9,7 @@ public class projectilemovement : MonoBehaviour
 {
 
 
-
+// använde en tutorial för det här scriptet https://www.youtube.com/watch?v=-bkmPm_Besk 
 
     private Camera mainCam;
 

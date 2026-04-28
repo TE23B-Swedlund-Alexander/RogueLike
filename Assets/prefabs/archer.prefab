@@ -178,7 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796d77d0a8f8aec408c30ae8943dae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Projectile: {fileID: 4101895639870996574, guid: 822dde067eae36b44b09791669b0f486, type: 3}
   speed: 4.5
   animator: {fileID: -7106802263612990456}
 --- !u!61 &-4611406119545695118
@@ -244,6 +243,7 @@ MonoBehaviour:
   guythatcanhurtme: Enemy
   IsPlayer: 1
   isEnemy: 0
+  Hp: 1
 --- !u!1 &611936110952462335
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,4 +413,4 @@ MonoBehaviour:
   bullet: {fileID: 4101895639870996574, guid: 822dde067eae36b44b09791669b0f486, type: 3}
   bulletTransform: {fileID: 1504176265127070430}
   canFire: 1
-  timeBetweenFire: 0.4
+  timeBetweenFire: 0.2
